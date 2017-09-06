@@ -1,0 +1,37 @@
+$base: #FF6BF7;
+$light-base: #FF84F9;
+$dark-base: #B239AC;
+
+$base-complement: #53B227;
+$light-base-complement: #99FF6B;
+$white: #fff;
+
+body{
+  background-color: $light-base;
+}
+.base{
+  color: $base;
+}
+.dark-base{
+  color: $dark-base;
+}
+.light-base-complement{
+  color: $light-base-complement;
+}
+.light-base-complement{
+  color: $light-base-complement;
+}
+.white{
+  color: #fff;
+}
+.btn{
+    border: none;
+    cursor: pointer;
+}
+.btn:hover{
+  background-color: $white;
+  color: $dark-base;
+}
+.bg-light{
+  background-color: $dark-base;
+}

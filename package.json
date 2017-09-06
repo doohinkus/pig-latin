@@ -1,14 +1,14 @@
 {
   "name": "vanilla-js-piglatin",
   "version": "1.0.0",
-  "description": "",
+  "description": "Converts sentences to piglatin using es6 syntax",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack-dev-server",
     "build-prod": "webpack -p"
   },
-  "keywords": ["babel boilerplate", "es6", "scss", "scss es6 boilerplate"],
+  "keywords": ["babel boilerplate piglatin es6", "ECMA Script 6", "es6", "scss", "scss es6 boilerplate", "pig lati"],
   "author": "Rafael Perez",
   "license": "ISC",
   "devDependencies": {

@@ -2,11 +2,20 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Vanilla JS (ECMA Script 5) Pig Latin App</title>
+    <title>Vanilla JS (ECMA Script 6) Pig Latin App</title>
     <link rel="stylesheet" href="dist/main.css" media="screen" title="no title">
   </head>
   <body>
-    <h1>Boilerplate</h1>
+    <h1 class="h1 white">Pig Latin</h1>
+    <form id="pig-latin">
+      <label class="loud bold center dark-base">Enter English Text</label>
+      <input type="text" id="english" />
+      <button id="translate" class="btn bg-light loud white">Translate</button>
+    </form>
+    <div id="output" class="center">
+      <span class="">test</span>
+    </div>
+
     <script src="dist/bundle.js" charset="utf-8"></script>
   </body>
 </html>
