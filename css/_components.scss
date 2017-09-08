@@ -1,8 +1,10 @@
 .btn{
-    border: none;
-    cursor: pointer;
+  border: none;
+  cursor: pointer;
+  transition: background-color .5s ease-in-out;
+
 }
 .btn:hover{
-  background-color: $white;
+  background-color: $light-base-complement;
   color: $dark-base;
 }
