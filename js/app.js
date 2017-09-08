@@ -27,7 +27,7 @@ let pigLatin = (sentence) => {
 const form = document.getElementById('pig-latin');
 
 //Translate
-let translateText = (e) => {
+const translateText = () => {
   //grab input value
   let english = document.getElementById('english').value;
   let translation = pigLatin(english);
