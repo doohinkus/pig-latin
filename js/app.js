@@ -41,6 +41,7 @@ const translateText = () => {
 
 const animateText = () =>{
     output.classList.remove("bubble-animation");
+    //weird hack to get the animation class to add, doesn't work without the delay
     setTimeout(()=>{
       output.classList.add("bubble-animation");
     },10)
@@ -50,5 +51,4 @@ const animateText = () =>{
 button.addEventListener('click', ()=>{
   translateText();
   animateText();
-  // e.preventDefault();
 });
