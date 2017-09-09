@@ -1,12 +1,10 @@
 
-form, div{
-  display: flex;
-  flex-direction: column;
-  padding: 1em;
-}
 input, label, button{
-  align-self:stretch;
+  // align-self:stretch;
   padding: .5em;
   margin: .5em;
   border-radius: .5em;
+}
+label{
+  display: block;
 }

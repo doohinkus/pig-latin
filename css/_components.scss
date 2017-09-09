@@ -2,21 +2,25 @@
   border: none;
   cursor: pointer;
   transition: background-color .5s ease-in-out;
-  background-color: $dark-base;
-  font-family: $base-font-family;
-}
-.btn:hover{
   background-color: $light-base-complement;
+  box-shadow: 3px 3px 0px 0px $base;
+  font-family: $base-font-family;
   color: $dark-base;
 }
+.btn:hover{
+
+  background-color: $dark-base;
+  color: $white;
+}
 .pig-svg{
-  width: 45%;
+  width: 30%;
 }
 
 .bubble{
    background: $white;
    position: relative;
    border-radius: .5em;
+   width: 50%;
 }
 
 .bubble:after{
@@ -34,13 +38,20 @@
 .bubble-animation{
   animation: fade-in .8s ease-in-out, bounce-in .5s ease-in;
 }
-
+.pig-latin{
+  width: 90%;
+}
 .pig-latin-input{
   border: none;
-  transition: background-color .5s ease-in-out;
+  width: 80%;
+  box-shadow: 3px 3px 0px 0px $light-base-complement;
+  // box-shadow: inset 3px 3px 0px $light-base-complement;
+  transition: all .5s ease-in-out;
 }
 .pig-latin-input:focus{
   background-color: lighten($light-base-complement, 15%);
+  box-shadow: 3px 3px 0px 0px $dark-base;
+
 }
 
 
