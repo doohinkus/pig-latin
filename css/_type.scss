@@ -1,17 +1,19 @@
 
 /*variables*/
-$heading-font-family: sans-serif;
+$heading-font-family: 'Francois One', sans-serif;
 $heading-font-weight: "bold";
-$fixed-font-family: sans-serif;
+$fixed-font-family: 'Francois One', sans-serif;
 $fixed-font-size: 100%;
 $fixed-line-height: 1.6;
 $quiet-color: lightgrey;
 $loud-color: steelblue;
 $text-color: #333;
 $base-font-size: 1em;
-$base-font-family: sans-serif;
+$base-font-family: 'Francois One', sans-serif;
 $base-font-weight: normal;
 /*end variables*/
+
+@import url('https://fonts.googleapis.com/css?family=Francois+One');
 .h1, .h2, .h3, .h4, .h5, .h6 {
   text-align: center;
   font-family: $heading-font-family;

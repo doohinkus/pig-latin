@@ -1,5 +1,6 @@
 $base: #FF6BF7;
-$light-base: #FF84F9;
+// $light-base: #FF84F9;
+$light-base: lighten(#FF84F9, 15%);
 $dark-base: #B239AC;
 
 $base-complement: #53B227;
@@ -21,5 +22,5 @@ $white: #fff;
   color: #fff;
 }
 .bg-light{
-  background-color: $dark-base;
+  background-color: $light-base;
 }

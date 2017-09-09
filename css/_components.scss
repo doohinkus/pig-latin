@@ -2,9 +2,55 @@
   border: none;
   cursor: pointer;
   transition: background-color .5s ease-in-out;
-
+  background-color: $dark-base;
+  font-family: $base-font-family;
 }
 .btn:hover{
   background-color: $light-base-complement;
   color: $dark-base;
+}
+.pig-svg{
+  width: 45%;
+}
+.piggy{
+
+}
+.bubble{
+   background: $white;
+   position: relative;
+}
+.bubble:after{
+  content: '';
+  position: absolute;
+  right: 30px;
+  bottom: -10px;
+  width: 0;
+  height: 0;
+  border-top : 10px solid $white;
+  border-right : 10px solid transparent;
+  border-left: 10px solid transparent;
+}
+
+.bubble-animation{
+  animation: fade-in .8s ease-in-out, bounce-in .5s ease-in;
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to{
+   opacity: 1;
+  }
+}
+
+@keyframes bounce-in{
+  0%{
+    bottom:-10em;
+  }
+  60%{
+    bottom: 1em;
+  }
+  100%{
+    bottom: 0;
+  }
 }
