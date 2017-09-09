@@ -41,7 +41,7 @@ $base-font-weight: normal;
 .ordered-list { list-style: decimal; }
 
 
-body {
+body, .base-font {
   color: $text-color;
   font-size: $base-font-size;
   font-family: $base-font-family;

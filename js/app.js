@@ -35,7 +35,7 @@ const translateText = () => {
   if (english !=""){
     let translation = pigLatin(english);
     //output answer
-    output.textContent = translation;
+    output.textContent = translation.toLowerCase();
   }
 }
 
@@ -47,7 +47,7 @@ const animateText = () =>{
     },10)
 }
 
-//addEventListener to form  and prevent form default submit, which really screws things up
+//addEventListener to button
 button.addEventListener('click', ()=>{
   translateText();
   animateText();
