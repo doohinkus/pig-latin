@@ -6,7 +6,8 @@
 
 ## Description
 
-_A web application that takes English words and translates them into pig latin._
+_A web application that takes English words and translates them into Pig Latin.
+[View live Pig Latin project on Surge](http://pig-latin.surge.sh/)_
 
 
 ## Setup/Installation Requirements (Requires NodeJS)
