@@ -24,19 +24,31 @@ let pigLatin = (sentence) => {
 /*User interaction*/
 
 //grab reference to form
-const form = document.getElementById('pig-latin');
+const button = document.getElementById('translate');
+//reference to output
+const output = document.getElementById('output');
 
 //Translate
 const translateText = () => {
   //grab input value
-  let english = document.getElementById('english').value;
-  let translation = pigLatin(english);
-  //output answer
-  output.textContent = translation;
+  const english = document.getElementById('english').value;
+  if (english !=""){
+    let translation = pigLatin(english);
+    //output answer
+    output.textContent = translation;
+  }
+}
+
+const animateText = () =>{
+  if (output.classList.contains("bubble-animation")){
+    output.classList.remove("bubble-animation");
+  }
+  output.classList.add("bubble-animation");
 }
 
 //addEventListener to form  and prevent form default submit, which really screws things up
-form.addEventListener('submit', (e)=>{
+button.addEventListener('click', ()=>{
   translateText();
-  e.preventDefault();
+  animateText();
+  // e.preventDefault();
 });

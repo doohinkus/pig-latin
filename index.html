@@ -5,17 +5,21 @@
     <title>Vanilla JS (ECMA Script 6) Pig Latin App</title>
     <link rel="stylesheet" href="dist/main.css" media="screen" title="no title">
   </head>
-  <body>
+  <body class="bg-light">
     <h1 class="h1 base">Pig Latin</h1>
-    <form id="pig-latin">
+    <div id="pig-latin">
       <label class="loud bold center dark-base">Enter English Text</label>
       <input type="text" id="english" />
-      <button id="translate" class="btn bg-light loud white">Translate</button>
-    </form>
-    <div id="output" class="center">
-      <span class="">test</span>
+      <button id="translate" class="btn loud white">Translate</button>
     </div>
-
+    <div class="piggy">
+      <div id="output" class="center bubble">
+        <span>Ready to translate.</span>
+      </div>
+      <div class="pig-svg center">
+        <img src="img/pig.svg" alt="pig svg" />
+      </div>
+    </div>
     <script src="dist/bundle.js" charset="utf-8"></script>
   </body>
 </html>
