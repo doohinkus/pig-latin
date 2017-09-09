@@ -40,10 +40,10 @@ const translateText = () => {
 }
 
 const animateText = () =>{
-  if (output.classList.contains("bubble-animation")){
     output.classList.remove("bubble-animation");
-  }
-  output.classList.add("bubble-animation");
+    setTimeout(()=>{
+      output.classList.add("bubble-animation");
+    },10)
 }
 
 //addEventListener to form  and prevent form default submit, which really screws things up
