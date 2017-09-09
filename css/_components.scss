@@ -16,14 +16,9 @@
 .bubble{
    background: $white;
    position: relative;
+   border-radius: .5em;
 }
-.pig-latin-input{
-  border: none;
-  transition: background-color .5s ease-in-out;
-}
-.pig-latin-input:focus{
-  background-color: lighten($light-base-complement, 15%);
-}
+
 .bubble:after{
   content: '';
   position: absolute;
@@ -38,6 +33,14 @@
 
 .bubble-animation{
   animation: fade-in .8s ease-in-out, bounce-in .5s ease-in;
+}
+
+.pig-latin-input{
+  border: none;
+  transition: background-color .5s ease-in-out;
+}
+.pig-latin-input:focus{
+  background-color: lighten($light-base-complement, 15%);
 }
 
 

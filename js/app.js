@@ -32,10 +32,13 @@ const output = document.getElementById('output');
 const translateText = () => {
   //grab input value
   const english = document.getElementById('english').value;
+  const error = "Please enter text to translate.";
   if (english !=""){
     let translation = pigLatin(english);
     //output answer
     output.textContent = translation.toLowerCase();
+  }else{
+    output.textContent = error
   }
 }
 
@@ -49,6 +52,6 @@ const animateText = () =>{
 
 //addEventListener to button
 button.addEventListener('click', ()=>{
-  translateText();
   animateText();
+  translateText();
 });
